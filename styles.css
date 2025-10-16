@@ -184,8 +184,8 @@ body {
 
 .eye-icon {
     position: relative;
-    width: 40px;
-    height: 25px;
+    width: 50px;
+    height: 32px;
 }
 
 .logo-image {
@@ -239,7 +239,7 @@ body {
 }
 
 .alfa-text {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     font-weight: 800;
     color: var(--primary-color);
     text-shadow: 1px 1px 0 var(--secondary-color);
@@ -247,7 +247,7 @@ body {
 }
 
 .hospitals-text {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     font-weight: 700;
     color: var(--primary-color);
     text-shadow: 1px 1px 0 var(--secondary-color);
@@ -1503,8 +1503,8 @@ body {
 }
 
 .footer-logo .eye-icon {
-    width: 35px;
-    height: 22px;
+    width: 45px;
+    height: 28px;
 }
 
 .footer-logo .eye-outer {
@@ -1521,13 +1521,13 @@ body {
 }
 
 .footer-logo .alfa-text {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     color: var(--white);
     text-shadow: 1px 1px 0 var(--accent-color);
 }
 
 .footer-logo .hospitals-text {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     color: var(--white);
     text-shadow: 1px 1px 0 var(--accent-color);
 }
