@@ -1,0 +1,22 @@
+{
+  "name": "alfa-specialized-hospital",
+  "version": "1.0.0",
+  "description": "Alfa Specialized Hospital website - Modern healthcare website with sliding facilities and green branding",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "start": "echo 'Static site - serve index.html'"
+  },
+  "keywords": [
+    "hospital",
+    "healthcare",
+    "medical",
+    "tanzania",
+    "dar-es-salaam"
+  ],
+  "author": "Alfa Specialized Hospital",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
