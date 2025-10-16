@@ -1825,32 +1825,400 @@ body {
     }
 }
 
+/* Mobile Optimizations */
 @media (max-width: 480px) {
+    /* Container and Spacing */
     .container {
-        padding: 0 var(--spacing-4);
+        padding: 0 var(--spacing-3);
     }
     
+    /* Typography */
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-2xl);
+        line-height: 1.2;
+        margin-bottom: var(--spacing-4);
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-3);
     }
     
     .section-title {
-        font-size: var(--font-size-2xl);
+        font-size: var(--font-size-xl);
+        line-height: 1.3;
+    }
+    
+    .section-description {
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: var(--spacing-3) 0;
+    }
+    
+    .nav-links {
+        gap: var(--spacing-4);
+    }
+    
+    .nav-links a {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-2) var(--spacing-3);
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 80vh;
+        padding: var(--spacing-8) 0;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: var(--spacing-4) 0;
+    }
+    
+    .hero-badge {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-2) var(--spacing-3);
+        margin-bottom: var(--spacing-4);
+    }
+    
+    .alfa-tagline {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .alfa-tagline span {
+        font-size: var(--font-size-base);
     }
     
     .hero-stats {
         flex-direction: column;
-        gap: var(--spacing-4);
+        gap: var(--spacing-3);
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .stat-item {
+        padding: var(--spacing-3);
+        border-radius: var(--radius-lg);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .stat-label {
+        font-size: var(--font-size-sm);
     }
     
     .hero-buttons {
         flex-direction: column;
+        gap: var(--spacing-3);
         align-items: center;
     }
     
     .btn {
         width: 100%;
+        max-width: 280px;
+        padding: var(--spacing-3) var(--spacing-6);
+        font-size: var(--font-size-base);
         justify-content: center;
+        min-height: 48px; /* Touch-friendly */
+    }
+    
+    /* Sections */
+    .section {
+        padding: var(--spacing-12) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--spacing-8);
+    }
+    
+    .section-badge {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-2) var(--spacing-3);
+        margin-bottom: var(--spacing-3);
+    }
+    
+    /* About Section */
+    .about-content {
+        gap: var(--spacing-6);
+    }
+    
+    .about-text {
+        font-size: var(--font-size-sm);
+        line-height: 1.6;
+    }
+    
+    .about-features {
+        gap: var(--spacing-4);
+    }
+    
+    .feature-item {
+        padding: var(--spacing-3);
+        border-radius: var(--radius-lg);
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+    
+    .feature-title {
+        font-size: var(--font-size-base);
+    }
+    
+    .feature-description {
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Facilities Slider */
+    .facilities-slider {
+        margin: var(--spacing-6) 0;
+    }
+    
+    .facilities-track {
+        gap: var(--spacing-4);
+        animation-duration: 25s;
+    }
+    
+    .facility-card {
+        flex: 0 0 260px;
+        min-width: 260px;
+        margin: 0 var(--spacing-1);
+    }
+    
+    .facility-icon-large {
+        width: 80px;
+        height: 80px;
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-3);
+    }
+    
+    .facility-content {
+        padding: var(--spacing-3);
+    }
+    
+    .facility-title {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .facility-description {
+        font-size: var(--font-size-sm);
+        line-height: 1.5;
+        margin-bottom: var(--spacing-3);
+    }
+    
+    .facility-features {
+        gap: var(--spacing-1);
+    }
+    
+    .feature-tag {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-1) var(--spacing-2);
+    }
+    
+    /* Specialists Section */
+    .specialists-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    .specialist-card {
+        padding: var(--spacing-4);
+        border-radius: var(--radius-lg);
+    }
+    
+    .specialist-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--spacing-3);
+    }
+    
+    .specialist-specialty {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .specialist-expertise {
+        gap: var(--spacing-1);
+    }
+    
+    .expertise-tag {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-1) var(--spacing-2);
+    }
+    
+    /* Insurance Section */
+    .insurance-section {
+        padding: var(--spacing-12) 0;
+    }
+    
+    .insurance-item {
+        min-width: 100px;
+        padding: var(--spacing-2);
+    }
+    
+    .insurance-logo {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .insurance-name {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        gap: var(--spacing-6);
+    }
+    
+    .contact-info {
+        gap: var(--spacing-4);
+    }
+    
+    .contact-item {
+        padding: var(--spacing-3);
+        border-radius: var(--radius-lg);
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+    
+    .contact-details h4 {
+        font-size: var(--font-size-base);
+    }
+    
+    .contact-details p {
+        font-size: var(--font-size-sm);
+    }
+    
+    .contact-map {
+        height: 250px;
+        border-radius: var(--radius-lg);
+    }
+    
+    /* Footer */
+    .footer {
+        padding: var(--spacing-6) 0 var(--spacing-3);
+    }
+    
+    .footer-content {
+        gap: var(--spacing-4);
+        margin-bottom: var(--spacing-4);
+    }
+    
+    .footer-section h4 {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .footer-section p {
+        font-size: var(--font-size-sm);
+        line-height: 1.5;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: var(--spacing-1);
+    }
+    
+    .footer-section ul li a {
+        font-size: var(--font-size-sm);
+    }
+    
+    .footer .social-links {
+        gap: var(--spacing-2);
+    }
+    
+    .footer .social-links a {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-sm);
+    }
+    
+    .footer-bottom {
+        padding-top: var(--spacing-3);
+        flex-direction: column;
+        gap: var(--spacing-2);
+        text-align: center;
+    }
+    
+    .footer-bottom p {
+        font-size: var(--font-size-xs);
+    }
+    
+    .footer-links {
+        gap: var(--spacing-4);
+    }
+    
+    .footer-links a {
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Touch-friendly improvements */
+    .btn, .nav-links a, .facility-card, .specialist-card, .contact-item {
+        min-height: 44px; /* iOS touch target minimum */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Improved scrolling */
+    .facilities-track {
+        scroll-behavior: smooth;
+    }
+    
+    /* Better spacing for touch */
+    .hero-floating-cards {
+        gap: var(--spacing-3);
+    }
+    
+    .floating-card {
+        padding: var(--spacing-3);
+        border-radius: var(--radius-lg);
+    }
+}
+
+/* Mobile Performance Optimizations */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input, textarea, [contenteditable] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Smooth scrolling for mobile */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select, textarea, input[type="text"], input[type="password"], 
+    input[type="datetime"], input[type="datetime-local"], 
+    input[type="date"], input[type="month"], input[type="time"], 
+    input[type="week"], input[type="number"], input[type="email"], 
+    input[type="url"], input[type="search"], input[type="tel"], 
+    input[type="color"] {
+        font-size: 16px;
     }
 }
 
